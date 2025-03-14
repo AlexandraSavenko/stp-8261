@@ -4,76 +4,153 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/stp-8261/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Match Master</title>
     
-    <script type="module" crossorigin src="/stp-8261/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/stp-8261/assets/index-95868f65.css">
-  </head>
+  <script type="module" crossorigin src="/stp-8261/commonHelpers2.js"></script>
+  <link rel="stylesheet" href="/stp-8261/assets/styles-f179b29e.css">
+
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-    
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <!-- <header class="header">
+  <div class="header-container">
+    <a href="#home" class="logo-link">
+      <img class="logo" src="img/logo.png" alt="Logo" />
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#how-to-play" class="nav-link">How to Play</a>
+        </li>
+        <li class="nav-item">
+          <a href="#why-us" class="nav-link">Why Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ</a>
         </li>
       </ul>
-    </div>
+    </nav>
+    <button type="button" class="menu-open">
+      <img src="icons/menu-burger.png" alt="Menu Icon" width="30" height="30" />
+    </button>
+  </div>
+</header>
+<div class="header-dropdown">
+  <button type="button" class="menu-close">
+    <img src="icons/close.png" alt="Close Icon" width="24" height="24" />
+  </button>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a href="#home" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="#about" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">
+      <a href="#how-to-play" class="nav-link">How to Play</a>
+    </li>
+    <li class="nav-item">
+      <a href="#why-us" class="nav-link">Why Us</a>
+    </li>
+    <li class="nav-item">
+      <a href="#reviews" class="nav-link">Reviews</a>
+    </li>
+    <li class="nav-item">
+      <a href="#gallery" class="nav-link">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a href="#faq" class="nav-link">FAQ</a>
+    </li>
+  </ul>
+</div> -->
+<!-- ============== Progress bar ==================== -->
+<!-- <div class="progress-bar"></div> -->
+<!-- ============== Progress bar ==================== -->
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/stp-8261/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+
+    <main>
+      <section id="home" class="hero">
+  <div class="container hero-container">
+    <div class="hero-wrapper">
+      <h1 class="hero-title">
+        Match Master:<br />
+        Goods Triple 3D
+      </h1>
+      <p class="hero-text">Test Your Brain and Master the Art of Matching!</p>
+    </div>
+    <div class="hero-video-block">
+      <div class="in"></div>
+      <video
+        class="hero-video"
+        width="100%"
+        height="auto"
+        autoplay="autoplay"
+        loop="loop"
+      >
+        <source src="../img/hero/hero-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-wrapper-btn">
+      <a
+        class="hero-button"
+        target="_blank"
+        href="https://play.google.com/store/apps/details?id=com.triple.match3d.goods.puzzle.games&hl=en&gl=us"
+      >
+        <img
+          class="hero-button-img"
+          alt="google play"
+          src="data:image/png;base64,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"
+          width="24"
+          height="24"
+        />
+        Start Matching Now!
+      </a>
     </div>
   </div>
 </section>
 
+<!-- <div class="video_block">
+    <div class="in"></div>
+    <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+    <source src="cloud.mp4"></source>
+</div> -->
+
+      <section class="hero-plus">
+  <img src="../img/hero/vector.png" alt="vector" width="100%" />
+</section>
+
+      <!-- <section id="why-us" class="section">
+      </section>
+
+      <section class="section"></section>
+
+      
+      <section class="future"></section>
+
+      <section id="gallery" class="section"></section>
+
+      <section id="reviews" class="section"><</section>
+ -->
+    </main>
+
+    
+    
 
     
   </body>
