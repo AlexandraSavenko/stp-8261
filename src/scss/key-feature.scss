@@ -21,19 +21,31 @@
 
 /* Individual slide styles */
 .features-swiper .swiper-slide {
-    width: 142px !important; /* Force fixed width */
-    height: 255px !important; /* Fixed height */
-    border: 2px solid #FCEA5E;
-background-color: #2D75E2;
-    border-radius: 8px;
+//     width: 142px !important; /* Force fixed width */
+//     height: 255px !important; /* Fixed height */
+//     border: 2px solid #FCEA5E;
+// background-color: #2D75E2;
+//     border-radius: 8px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow: hidden; /* Prevent content overflow */
 }
 
+.features-swiper .swiper-slide .card-one,
+.features-swiper .swiper-slide .card-two{
+    width: 142px !important; /* Force fixed width */
+    height: 255px !important; /* Fixed height */
+    border: 2px solid #FCEA5E;
+background-color: #2D75E2;
+    border-radius: 8px;
+}
+
+.features-swiper .swiper-slide .card-one{
+    margin-right: 4px;
+}
 .features-text-wrap h3{
     color: #FCEA5E
 }
