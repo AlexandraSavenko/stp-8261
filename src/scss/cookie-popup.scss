@@ -22,12 +22,15 @@
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
-  background-color: $_main_color;
+  background-color: #3A475A;
   z-index: 999;
   padding-top: 32px;
   padding-bottom: 22px;
   padding-left: 16px;
   padding-right: 16px;
+  border: 4px solid;
+  border-image: linear-gradient(90deg,  #199CFE, #C9D8E3) 1;
+  border-radius: 18px;
 
   @include media(desktop) {
     padding-top: 49px;
@@ -37,6 +40,10 @@
   }
 }
 
+.cookies-popup{
+  width: 100%;
+  height: 159px;
+}
 .show-popup {
   display: block;
 }
@@ -50,64 +57,64 @@
   }
 }
 
-.cookie-text {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 17px;
-  letter-spacing: 0em;
-  margin-bottom: 16px;
+// .cookie-text {
+//   font-family: 'Alegreya Sans SC', sans-serif;
+//   font-size: 17px;
+//   letter-spacing: 0em;
+//   margin-bottom: 16px;
 
-  @include media(desktop) {
-    font-weight: 500;
-    font-size: 21px;
-  }
-}
+//   @include media(desktop) {
+//     font-weight: 500;
+//     font-size: 21px;
+//   }
+// }
 
-.cookie-text {
-  &.cookie-text-about {
-    font-weight: 500;
-    font-size: 15px;
-    margin-bottom: 24px;
+// .cookie-text {
+//   &.cookie-text-about {
+//     font-weight: 500;
+//     font-size: 15px;
+//     margin-bottom: 24px;
 
-    @include media(desktop) {
-      font-weight: 400;
-      font-size: 17px;
-      margin-bottom: 20px;
-    }
-  }
-}
+//     @include media(desktop) {
+//       font-weight: 400;
+//       font-size: 17px;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
 
-.cookie-btn-wrap {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 1034px;
+// .cookie-btn-wrap {
+//   display: flex;
+//   align-items: center;
+//   gap: 40px;
+//   justify-content: center;
+//   margin: 0 auto;
+//   max-width: 1034px;
 
-  @include media(desktop) {
-    gap: 20px;
-    justify-content: end;
-  }
-}
+//   @include media(desktop) {
+//     gap: 20px;
+//     justify-content: end;
+//   }
+// }
 
-.cookie-btn {
-  font-family: 'Prompt', sans-serif;
-  border: 1px solid #1d0000;
-  border-radius: 12px;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.01em;
-  color: inherit;
-  background-color: $_main_color;
-  width: 106px;
-  height: 44px;
-  transition: all 250ms linear;
-}
+// .cookie-btn {
+//   font-family: 'Prompt', sans-serif;
+//   border: 1px solid #1d0000;
+//   border-radius: 12px;
+//   font-weight: 500;
+//   font-size: 16px;
+//   letter-spacing: 0.01em;
+//   color: inherit;
+//   background-color: $_main_color;
+//   width: 106px;
+//   height: 44px;
+//   transition: all 250ms linear;
+// }
 
-.cookie-btn:hover,
-.cookie-btn:focus {
-  background-color: #6c331e;
-  color: $_main_color;
-  border: none;
-  outline: none;
-}
+// .cookie-btn:hover,
+// .cookie-btn:focus {
+//   background-color: #6c331e;
+//   color: $_main_color;
+//   border: none;
+//   outline: none;
+// }
