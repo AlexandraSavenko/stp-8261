@@ -1,98 +1,115 @@
 body {
-  padding-top: 54px;
+  padding-top: 20px;
 }
 .pages-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px 40px 20px;
+  background-color: $_bg_pages;
+  padding: 0 16px;
   @include media(desktop) {
-    padding: 0 80px 60px 80px;
+    padding: 0 60px;
   }
 }
+
 .pages-back-link {
-  display: block;
-  width: 44px;
-  height: 44px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 110px;
+  height: 32px;
   margin-bottom: 12px;
   @include media(desktop) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 175px;
-    height: 50px;
+    width: 155px;
+    height: 54px;
     margin-bottom: 20px;
   }
 }
+.icon-blue {
+  display: none;
+}
 .pages-back-link:hover {
-  color: $_yellow_color;
+  color: $_blue_color;
   cursor: pointer;
+  .icon-blue {
+    display: block;
+  }
+  .icon-white {
+    display: none;
+  }
 }
 .pages-header-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  gap: 8px;
+
   @include media(desktop) {
-    width: 40px;
-    height: 40px;
+    width: 155px;
+    height: 54px;
   }
 }
 .pages-icon {
-  width: 9px;
-  height: 16px;
+  width: 17px;
+  height: 15px;
+
+  @include media(desktop) {
+    width: 28px;
+    height: 25px;
+  }
 }
 .pages-back-text {
-  display: none;
+  font-family: Passion One;
+  font-weight: 700;
+  font-size: 12px;
+
+  @include media(desktop) {
+    font-size: 12px;
+  }
 }
 .pages-content {
-  padding: 20px 16px 20px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border-radius: 20px;
-  background-color: #ffeec3;
-  @include media(desktop) {
-    padding: 40px 88px 40px 88px;
-  }
 }
 .pages-content-title {
-  font-size: 36px;
-  letter-spacing: 0.09px;
-  color: black;
+  font-weight: 900;
+  @include font(24, 24);
+  color: $_yellow_color;
+  -webkit-text-stroke: 1px $_braun_color;
+  text-align: center;
   margin-bottom: 20px;
   @include media(desktop) {
-    font-size: 51px;
+    font-size: 48px;
+    margin-bottom: 30px;
   }
 }
 .pages-title {
-  font-size: 26px;
-  margin-bottom: 20px;
-  color: black;
+  @include font(20, 20);
+  margin-bottom: 8px;
+  color: $_yellow_color;
   @include media(desktop) {
-    font-size: 36px;
-    letter-spacing: 0.09px;
+    @include font(40, 48);
+    margin-bottom: 30px;
   }
 }
 .pages-title-weak {
-  font-size: 21px;
-  font-weight: 500;
+  font-size: 16px;
   letter-spacing: 0.032px;
-  color: black;
+  color: $_yellow_color;
+  margin-bottom: 8px;
   @include media(desktop) {
     font-size: 26px;
   }
 }
 .pages-text {
   font-family: Prompt;
-  letter-spacing: 0.035px;
-  color: black;
-  margin-bottom: 20px;
+  color: $_main_color_white;
+  margin-bottom: 12px;
   @include media(desktop) {
-    font-size: 16px;
-    letter-spacing: 0.04px;
+    font-size: 24px;
+    margin-bottom: 36px;
   }
 }
 .pages-text a {
@@ -105,16 +122,12 @@ body {
 .pages-list-text {
   font-family: Prompt;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.035px;
-  color: black;
-  margin-bottom: 20px;
+  color: $_main_color_white;
   list-style: inside;
+  margin-bottom: 12px;
   @include media(desktop) {
-    font-size: 16px;
-    letter-spacing: 0.04px;
+    font-size: 24px;
+    margin-bottom: 36px;
   }
 }
 
@@ -126,14 +139,22 @@ body {
   }
 }
 .pages-link-accent {
-  text-decoration: underline;
+  margin-bottom: 20px;
 }
 @include media(desktop) {
   .pages-back-text {
     display: block;
-    font-family: 'Alegreya Sans SC';
     font-size: 21px;
     font-weight: 500;
     letter-spacing: 0.032px;
   }
+}
+.pages-link {
+  color: $_blue_color;
+}
+.pages-item {
+  color: $_yellow_color;
+}
+.no-punctum {
+  list-style: none;
 }
