@@ -15,7 +15,7 @@ import 'swiper/css/parallax';
 
 const swiper = new Swiper('.reviews-swiper', {
  slidesPerView: 1,
-spaceBetween: 24,
+      spaceBetween: 24,
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
@@ -23,10 +23,7 @@ spaceBetween: 24,
   },
   
    // Navigation arrows
-navigation: {
-  nextEl: '.reviews-button-next',
-  prevEl: '.reviews-button-prev',
-},
+
 keyboard: {
   enabled: true,
   onlyInViewport: true,
@@ -35,6 +32,11 @@ breakpoints: {
 
     1200: {
       slidesPerView: 3,
+
+      navigation: {
+  nextEl: '.reviews-button-next',
+  prevEl: '.reviews-button-prev',
+},
     },
   },
 });

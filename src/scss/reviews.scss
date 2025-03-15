@@ -1,90 +1,18 @@
-// .reviews-swiper .reviews-swiper-wrapper{
-// border: 1px solid white;
-// width: 286px;
-// margin-left: auto;
-//   margin-right: auto;
-//   position: relative;
-//   overflow: hidden;
-//   list-style: none;
-//   padding: 0;
-//   z-index: 1;
-// //   display: block;
 
-// }
-
-// .reviews-swiper .reviews-swiper-wrapper .reviews-slide{
-//     width: 211px !important; 
-//     display: block;
-// }
-
-// .reviews-card{
-//     background-color: #FCEA5E;
-// }
-
-// .rev-text{
-//     color: #383F4F;
-//     font-family: Passion One;
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: 100%;
-// }
-
-// .reviews-swiper .reviews-swiper-wrapper .reviews-slide p {
-//     word-wrap: break-word;
-//     overflow-wrap: break-word;
-//     white-space: normal;
-//     max-width: 100%;
-// }
-
-//  .swiper-pagination{
-// width: fit-content;
-
-//  }
-//  .reviews-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
-//     background-color: green;
-//     border: 1px solid white;
-//     opacity: 1;
-//   }
-  
-//   /* target all bullets */
-//   span.swiper-pagination-bullet {
-//     background-color: white;
-//     border: 1px solid green;
-//     opacity: 1;
-//   }
-
-//   .swiper-button-prev{
-//     border: 1px solid black
-//   }
-//   .swiper-button-next::after,
-//   .swiper-button-prev::after {
-//       content: none !important; /* Use !important if needed */
-//   }
-
-//   .swiper-button-prev {
-//     content: "";
-//     display: inline-block;
-//     width: 24px; /* Adjust width and height as needed */
-//     height: 24px;
-//     background-image: url("../img/arrow-sm-left-svgrepo-com.svg");
-//     color: black;
-//     background-size: contain;
-//     background-repeat: no-repeat;
-// }
 
 #reviews{
-    background-color: pink;
     box-sizing: border-box;
+    padding: 0 54px;
 }
 /* Container styles */
 .reviews-swiper {
     width: 100%; /* Adjust width based on your layout */
     overflow: hidden;
-    height: 400px;
+    height: 300px;
     position: relative;
-    border: 3px solid orangered;
-    // display: flex;
-    // justify-content: center; /* Center swiper in its container */
+    display: flex;
+    justify-content: center; /* Center swiper in its container */
+    align-items: center;
 }
 
 /* Wrapper for Swiper slides */

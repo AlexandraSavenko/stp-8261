@@ -6,7 +6,7 @@ import 'swiper/css/bundle';
 
 
 // init Swiper:
-const swiper = new Swiper('.features-swiper', {
+const swiper = new Swiper('.benefits-swiper', {
     slidesPerView: 2,
           spaceBetween: 24, 
     pagination: {
@@ -14,7 +14,6 @@ const swiper = new Swiper('.features-swiper', {
       dynamicBullets: true,
       
     },
-    
     keyboard: {
         enabled: true,
         onlyInViewport: true,
