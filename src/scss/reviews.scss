@@ -1,0 +1,165 @@
+// .reviews-swiper .reviews-swiper-wrapper{
+// border: 1px solid white;
+// width: 286px;
+// margin-left: auto;
+//   margin-right: auto;
+//   position: relative;
+//   overflow: hidden;
+//   list-style: none;
+//   padding: 0;
+//   z-index: 1;
+// //   display: block;
+
+// }
+
+// .reviews-swiper .reviews-swiper-wrapper .reviews-slide{
+//     width: 211px !important; 
+//     display: block;
+// }
+
+// .reviews-card{
+//     background-color: #FCEA5E;
+// }
+
+// .rev-text{
+//     color: #383F4F;
+//     font-family: Passion One;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 100%;
+// }
+
+// .reviews-swiper .reviews-swiper-wrapper .reviews-slide p {
+//     word-wrap: break-word;
+//     overflow-wrap: break-word;
+//     white-space: normal;
+//     max-width: 100%;
+// }
+
+//  .swiper-pagination{
+// width: fit-content;
+
+//  }
+//  .reviews-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+//     background-color: green;
+//     border: 1px solid white;
+//     opacity: 1;
+//   }
+  
+//   /* target all bullets */
+//   span.swiper-pagination-bullet {
+//     background-color: white;
+//     border: 1px solid green;
+//     opacity: 1;
+//   }
+
+//   .swiper-button-prev{
+//     border: 1px solid black
+//   }
+//   .swiper-button-next::after,
+//   .swiper-button-prev::after {
+//       content: none !important; /* Use !important if needed */
+//   }
+
+//   .swiper-button-prev {
+//     content: "";
+//     display: inline-block;
+//     width: 24px; /* Adjust width and height as needed */
+//     height: 24px;
+//     background-image: url("../img/arrow-sm-left-svgrepo-com.svg");
+//     color: black;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+// }
+
+/* Container styles */
+.reviews-swiper {
+    width: 100%; /* Adjust width based on your layout */
+    display: flex;
+    justify-content: center; /* Center swiper in its container */
+}
+
+/* Wrapper for Swiper slides */
+.reviews-swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Individual slide styles */
+.reviews-swiper .swiper-slide {
+    width: 211px !important; /* Force fixed width */
+    height: 159px !important; /* Fixed height */
+    border: 2px solid #C5753D;
+    border-radius: 8px;
+    background-color: #F0DDCB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Prevent content overflow */
+}
+.reviews-card p{
+    width: 195px;
+    height: 101px;
+    border: 1px solid #C5753D;
+    border-radius: 8px;
+    color: #383F4F;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px; /* Prevent text from touching the border */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow */
+    word-wrap: break-word; /* Ensure text wraps properly */
+    margin-bottom: 8px;
+}
+
+.reviews-card-author p {
+    background-color: #FCEA5E;
+    border: 1px solid #C5753D;
+border-radius: 8px;
+color: #383F4F;
+    width: 158px;
+    height: 34px;
+}
+
+
+.swiper-pagination .reviews-pagination{
+    width: fit-content;
+    position: absolute;
+    top: 100px;
+    
+     }
+     .reviews-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: green;
+        border: 1px solid white;
+        opacity: 1;
+      }
+      
+      /* target all bullets */
+      span.swiper-pagination-bullet {
+        background-color: white;
+        border: 1px solid green;
+        opacity: 1;
+      }
+    
+// .reviews-swiper .swiper-pagination {
+//     width: auto !important;
+//     margin-top: 21px; /* Space between slides and bullets */
+// }
+
+// /* Pagination bullets */
+// .reviews-swiper .swiper-pagination-bullet {
+//     width: 10px; /* Default bullet size */
+//     height: 10px;
+//     background-color: #3CC708; /* Bullet color */
+//     border: 2px solid #C9D8E3; /* Border color */
+//     opacity: 1; /* Ensure bullets are always visible */
+//     margin: 0 5px !important; /* Space between bullets */
+// }
+
+// /* Active bullet */
+// .reviews-swiper .swiper-pagination-bullet-active {
+//     background-color: #3CC708; /* Same color when active */
+// }
