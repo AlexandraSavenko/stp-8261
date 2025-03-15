@@ -21,10 +21,10 @@ screen types:
     //   @media screen and (min-width: $tablet) {
     //     @content;
     //   }
-    // } @else if $_screen == to-desktop {
-    //   @media screen and (max-width: $to-desktop) {
-    //     @content;
-    //   }
+  } @else if $_screen == to-desktop {
+    @media screen and (max-width: $to-desktop) {
+      @content;
+    }
   } @else if $_screen == desktop {
     @media screen and (min-width: $desktop) {
       @content;

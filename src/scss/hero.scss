@@ -31,22 +31,24 @@
   font-weight: 900;
   @include font(40, 32);
   text-align: center;
-  color: #fcea5e;
-  -webkit-text-stroke: 1px #67280f;
+  color: $_yellow_color;
+  -webkit-text-stroke: 1px $_braun_color;
   text-transform: capitalize;
+  // ------------------------------------------------
   @include media(desktop) {
-    // font-size: 103px;
-    // letter-spacing: -1.545px;
+    @include font(74, 66);
+    text-align: left;
   }
+  // ----------------------------------------------
 }
 .hero-text {
   @include font(16, 12.95);
   text-align: center;
-  color: #383f4f;
+  color: $_main_color_black;
 
   @include media(desktop) {
-    font-size: 51px;
-    margin-bottom: 36px;
+    @include font(40, 48);
+    text-align: left;
   }
 }
 .hero-button {
@@ -61,28 +63,46 @@
   background-color: #3cc708;
   border-radius: 8px;
 
-  background-size: cover;
+  @include media(desktop) {
+    width: 344px;
+    height: 60px;
+    border: 2px solid #168a42;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 24px;
+  }
 }
-
-// .hero-button:active {
-//   transform: scale(0.95);
-// }
 
 .hero-button:hover,
 .hero-button:focus {
   scale: 1.05;
   box-shadow: 0 0 5px 5px rgba(252, 255, 255, 0.3);
   -webkit-text-stroke: 0.3px #04ab52;
-
-  // opacity: 0.8;
 }
-.hero-video {
+.hero-button-img {
+  width: 24px;
+  height: 24px;
+
+  @include media(desktop) {
+    width: 33px;
+    height: 33px;
+  }
 }
 .hero-video-block {
   position: relative;
 
   @include media(desktop) {
-    width: calc((100% - 24px) / 2);
+    width: 528px;
+    height: 360px;
+    // width: calc((100% - 24px) / 2);
+  }
+}
+.hero-video {
+  width: 100%;
+  @include media(desktop) {
+    width: 528px;
+    height: 360px;
+    object-fit: cover;
   }
 }
 
