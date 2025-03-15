@@ -6,10 +6,11 @@
 .features-swiper {
     width: 100%; /* Adjust width based on your layout */
     overflow: hidden;
-    height: 400px;
+    height: auto; 
+       position: relative;
     display: flex;
     justify-content: center;
-
+    align-items: center;
      /* Center swiper in its container */
 }
 
