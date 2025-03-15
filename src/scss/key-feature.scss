@@ -73,3 +73,11 @@ bottom: 0;
     background-color: #3CC708 !important; /* Active bullet color */
     border: 1px solid #C9D8E3 !important; /* Active border */
 }
+
+.features-nav-panel .swiper-button-prev,
+.features-nav-panel .swiper-button-next{
+    display: none;
+    @include media(desktop) {
+   display: block;
+  }
+}
