@@ -6,10 +6,11 @@
 .features-swiper {
     width: 100%; /* Adjust width based on your layout */
     overflow: hidden;
-    height: 400px;
+    height: auto; 
+       position: relative;
     display: flex;
     justify-content: center;
-
+    align-items: center;
      /* Center swiper in its container */
 }
 
@@ -21,19 +22,31 @@
 
 /* Individual slide styles */
 .features-swiper .swiper-slide {
-    width: 142px !important; /* Force fixed width */
-    height: 255px !important; /* Fixed height */
-    border: 2px solid #FCEA5E;
-background-color: #2D75E2;
-    border-radius: 8px;
+//     width: 142px !important; /* Force fixed width */
+//     height: 255px !important; /* Fixed height */
+//     border: 2px solid #FCEA5E;
+// background-color: #2D75E2;
+//     border-radius: 8px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow: hidden; /* Prevent content overflow */
 }
 
+.features-swiper .swiper-slide .card-one,
+.features-swiper .swiper-slide .card-two{
+    width: 142px !important; /* Force fixed width */
+    height: 255px !important; /* Fixed height */
+    border: 2px solid #FCEA5E;
+background-color: #2D75E2;
+    border-radius: 8px;
+}
+
+.features-swiper .swiper-slide .card-one{
+    margin-right: 4px;
+}
 .features-text-wrap h3{
     color: #FCEA5E
 }
@@ -72,4 +85,12 @@ bottom: 0;
 .features-pagination .swiper-pagination-bullet-active {
     background-color: #3CC708 !important; /* Active bullet color */
     border: 1px solid #C9D8E3 !important; /* Active border */
+}
+
+.features-nav-panel .swiper-button-prev,
+.features-nav-panel .swiper-button-next{
+    display: none;
+    @include media(desktop) {
+   display: block;
+  }
 }

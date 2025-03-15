@@ -1,12 +1,11 @@
-#benefits {
-    background-color: pink;
-}
+
 .benefits-swiper {
     width: 100%; /* Adjust width based on your layout */
     overflow: hidden;
     height: 400px;
     display: flex;
     justify-content: center;
+    position: relative;
 
      /* Center swiper in its container */
 }
@@ -39,14 +38,8 @@ background-color: #F0DDCB;
     color: #383F4F
 }
 
-.benefits-carousel{
-position: relative;
-}
-.benefits-pagination{
-position: absolute;
-bottom: 0;
 
-}
+// 
 
 /* Ensure pagination is positioned below the Swiper */
 .benefits-nav-panel {
@@ -57,7 +50,7 @@ bottom: 0;
 }
 
 /* Default pagination bullet styles */
-.benefits-pagination .swiper-pagination-bullet {
+.benefits-nav-panel .swiper-pagination .swiper-pagination-bullet {
     width: 10px; /* Default Swiper bullet size */
     height: 10px;
     background-color: #C9D8E3; /* Default inactive color */
@@ -67,7 +60,15 @@ bottom: 0;
 }
 
 /* Active bullet styles */
-.benefits-pagination .swiper-pagination-bullet-active {
+.benefits-nav-panel .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #3CC708 !important; /* Active bullet color */
     border: 1px solid #C9D8E3 !important; /* Active border */
+}
+
+.benefits-nav-panel .swiper-button-prev, 
+.benefits-nav-panel .swiper-button-next{
+    display: none;
+    @include media(desktop) {
+   display: block;
+  }
 }

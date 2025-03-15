@@ -5,10 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuOpen.addEventListener('click', () => {
     menuDropdown.classList.add('open');
+    document.body.classList.add('no-scroll')
   });
 
   menuClose.addEventListener('click', () => {
     menuDropdown.classList.remove('open');
+    document.body.classList.remove('no-scroll')
+
   });
 
   document.addEventListener('click', event => {
@@ -17,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
       !menuOpen.contains(event.target)
     ) {
       menuDropdown.classList.remove('open');
+      document.body.classList.remove('no-scroll')
+
     }
   });
 });

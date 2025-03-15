@@ -85,24 +85,12 @@ color: #383F4F;
     border: 1px solid #C9D8E3 !important; /* Active border */
 }
 
+.reviews-nav-panel .reviews-button-prev,
+.reviews-nav-panel .reviews-button-next{
+    display: none;
+    @include media(desktop) {
+   display: block;
+  }
+}
 //--------------------------------------------------------------------------------------
 
-// .reviews-swiper .swiper-pagination {
-//     width: auto !important;
-//     margin-top: 21px; /* Space between slides and bullets */
-// }
-
-// /* Pagination bullets */
-// .reviews-swiper .swiper-pagination-bullet {
-//     width: 10px; /* Default bullet size */
-//     height: 10px;
-//     background-color: #3CC708; /* Bullet color */
-//     border: 2px solid #C9D8E3; /* Border color */
-//     opacity: 1; /* Ensure bullets are always visible */
-//     margin: 0 5px !important; /* Space between bullets */
-// }
-
-// /* Active bullet */
-// .reviews-swiper .swiper-pagination-bullet-active {
-//     background-color: #3CC708; /* Same color when active */
-// }
