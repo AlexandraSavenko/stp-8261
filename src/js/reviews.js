@@ -21,12 +21,7 @@ spaceBetween: 24,
     dynamicBullets: true,
     
   },
-  breakpoints: {
-
-    1200: {
-      slidesPerView: 3,
-    },
-  },
+  
    // Navigation arrows
 navigation: {
   nextEl: '.reviews-button-next',
@@ -36,4 +31,10 @@ keyboard: {
   enabled: true,
   onlyInViewport: true,
 },
+breakpoints: {
+
+    1200: {
+      slidesPerView: 3,
+    },
+  },
 });

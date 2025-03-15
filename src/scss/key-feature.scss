@@ -1,0 +1,43 @@
+.features-swiper {
+    width: 100%; /* Adjust width based on your layout */
+    height: 300px;
+    display: flex;
+    justify-content: center; /* Center swiper in its container */
+}
+
+/* Wrapper for Swiper slides */
+.features-swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Individual slide styles */
+.features-swiper .swiper-slide {
+    width: 142px !important; /* Force fixed width */
+    height: 255px !important; /* Fixed height */
+    border: 2px solid #FCEA5E;
+background-color: #2D75E2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.features-text-wrap h3{
+    color: #FCEA5E
+}
+.features-text-wrap p{
+    color: #C9D8E3
+}
+
+.features-carousel{
+position: relative;
+}
+.features-pagination{
+position: absolute;
+bottom: 0;
+
+}

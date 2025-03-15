@@ -72,11 +72,19 @@
 //     background-repeat: no-repeat;
 // }
 
+#reviews{
+    background-color: pink;
+    box-sizing: border-box;
+}
 /* Container styles */
 .reviews-swiper {
     width: 100%; /* Adjust width based on your layout */
-    display: flex;
-    justify-content: center; /* Center swiper in its container */
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+    border: 3px solid orangered;
+    // display: flex;
+    // justify-content: center; /* Center swiper in its container */
 }
 
 /* Wrapper for Swiper slides */
@@ -123,27 +131,34 @@ color: #383F4F;
     width: 158px;
     height: 34px;
 }
+// -------------------------------------------------------------------------------------
 
+/* Ensure pagination is positioned below the Swiper */
+.reviews-nav-panel {
+    display: flex;
+    justify-content: center; /* Center it horizontally */
+    align-items: center;
+    margin-top: 21px; /* Keep 21px gap from slides */
+}
 
-.swiper-pagination .reviews-pagination{
-    width: fit-content;
-    position: absolute;
-    top: 100px;
-    
-     }
-     .reviews-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background-color: green;
-        border: 1px solid white;
-        opacity: 1;
-      }
-      
-      /* target all bullets */
-      span.swiper-pagination-bullet {
-        background-color: white;
-        border: 1px solid green;
-        opacity: 1;
-      }
-    
+/* Default pagination bullet styles */
+.reviews-pagination .swiper-pagination-bullet {
+    width: 10px; /* Default Swiper bullet size */
+    height: 10px;
+    background-color: #C9D8E3; /* Default inactive color */
+    border: 1px solid #3CC708; /* Inactive border */
+    opacity: 1; /* Ensure bullets are visible */
+    transition: background-color 0.3s, border 0.3s; /* Smooth transition */
+}
+
+/* Active bullet styles */
+.reviews-pagination .swiper-pagination-bullet-active {
+    background-color: #3CC708 !important; /* Active bullet color */
+    border: 1px solid #C9D8E3 !important; /* Active border */
+}
+
+//--------------------------------------------------------------------------------------
+
 // .reviews-swiper .swiper-pagination {
 //     width: auto !important;
 //     margin-top: 21px; /* Space between slides and bullets */
