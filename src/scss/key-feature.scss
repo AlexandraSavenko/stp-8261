@@ -120,10 +120,42 @@ flex-direction: row;    width: 100%;
     border: 1px solid #C9D8E3 !important; /* Active border */
 }
 
+.swiper-button-next::after,
+  .swiper-button-prev::after {
+      content: none !important; /* Use !important if needed */
+  }
+
 .features-swiper .swiper-button-prev,
 .features-swiper .swiper-button-next{
     display: none;
     @include media(desktop) {
-   display: block;
+   display: inline-block;
+   width: 24px; /* Adjust width and height as needed */
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
+}
+.features-swiper .swiper-button-prev {
+    background-image: url("../img/key-features/whiteLeft.png");
+    background-repeat: no-repeat; /* Recommended */
+    background-size: contain; /* Recommended */
+}
+
+.features-swiper .swiper-button-prev.active { /* Changed to .active for clarity */
+    background-image: url("../img/key-features/greenLeft.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.features-swiper .swiper-button-next {
+    background-image: url("../img/key-features/whiteRight.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.features-swiper .swiper-button-next.active {
+    background-image: url("../img/key-features/greenRight.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
