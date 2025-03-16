@@ -122,7 +122,7 @@ flex-direction: row;    width: 100%;
 
 .swiper-button-next::after,
   .swiper-button-prev::after {
-      content: none !important; /* Use !important if needed */
+      content: none !important;
   }
 
 .features-swiper .swiper-button-prev,
@@ -130,7 +130,7 @@ flex-direction: row;    width: 100%;
     display: none;
     @include media(desktop) {
    display: inline-block;
-   width: 24px; /* Adjust width and height as needed */
+   width: 24px; 
     height: 24px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -138,11 +138,11 @@ flex-direction: row;    width: 100%;
 }
 .features-swiper .swiper-button-prev {
     background-image: url("../img/key-features/whiteLeft.png");
-    background-repeat: no-repeat; /* Recommended */
-    background-size: contain; /* Recommended */
+    background-repeat: no-repeat; 
+    background-size: contain; 
 }
 
-.features-swiper .swiper-button-prev.active { /* Changed to .active for clarity */
+.features-swiper .swiper-button-prev.active { 
     background-image: url("../img/key-features/greenLeft.png");
     background-repeat: no-repeat;
     background-size: contain;

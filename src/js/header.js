@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const menuOpen = document.querySelector('.menu-open');
-  const menuClose = document.querySelector('.menu-close');
+  // const menuClose = document.querySelector('.menu-close');
   const menuDropdown = document.querySelector('.header-dropdown');
 
   menuOpen.addEventListener('click', () => {
@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('no-scroll')
   });
 
-  menuClose.addEventListener('click', () => {
-    menuDropdown.classList.remove('open');
-    document.body.classList.remove('no-scroll')
+  // menuClose.addEventListener('click', () => {
+  //   menuDropdown.classList.remove('open');
+  //   document.body.classList.remove('no-scroll')
 
-  });
+  // });
 
   document.addEventListener('click', event => {
     if (
