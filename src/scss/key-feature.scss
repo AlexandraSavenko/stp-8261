@@ -4,29 +4,22 @@
 
 }
 .features-swiper {
-    width: 100%; /* Adjust width based on your layout */
+    width: 100%; 
     overflow: hidden;
-    height: auto; 
-       position: relative;
+    height: 320px; 
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-     /* Center swiper in its container */
 }
 
-/* Wrapper for Swiper slides */
 .features-swiper .swiper-wrapper {
     display: flex;
     align-items: center;
 }
 
-/* Individual slide styles */
 .features-swiper .swiper-slide {
-//     width: 142px !important; /* Force fixed width */
-//     height: 255px !important; /* Fixed height */
-//     border: 2px solid #FCEA5E;
-// background-color: #2D75E2;
-//     border-radius: 8px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,15 +30,15 @@
 
 .features-swiper .swiper-slide .card-one,
 .features-swiper .swiper-slide .card-two{
-    width: 142px !important; /* Force fixed width */
-    height: 255px !important; /* Fixed height */
+    width: 142px !important; 
+    height: 255px !important; 
     border: 2px solid #FCEA5E;
 background-color: #2D75E2;
     border-radius: 8px;
 }
-
 .features-swiper .swiper-slide .card-one{
     margin-right: 4px;
+    margin-bottom: 14px;
 }
 .features-text-wrap h3{
     color: #FCEA5E
@@ -54,35 +47,28 @@ background-color: #2D75E2;
     color: #C9D8E3
 }
 
-.features-carousel{
-position: relative;
-}
-.features-pagination{
-position: absolute;
-bottom: 0;
-
-}
-
-/* Ensure pagination is positioned below the Swiper */
 .features-nav-panel {
+
+border: 2px solid red;
     display: flex;
     justify-content: center; /* Center it horizontally */
     align-items: center;
     margin-top: 21px; /* Keep 21px gap from slides */
 }
 
-/* Default pagination bullet styles */
-.features-pagination .swiper-pagination-bullet {
-    width: 10px; /* Default Swiper bullet size */
+
+
+
+.features-nav-panel .swiper-pagination .swiper-pagination-bullet {
+    width: 10px; 
     height: 10px;
-    background-color: #C9D8E3; /* Default inactive color */
-    border: 1px solid #3CC708; /* Inactive border */
-    opacity: 1; /* Ensure bullets are visible */
-    transition: background-color 0.3s, border 0.3s; /* Smooth transition */
+    background-color: #C9D8E3; 
+    border: 1px solid #3CC708; 
+    opacity: 1; 
+    transition: background-color 0.3s, border 0.3s; 
 }
 
-/* Active bullet styles */
-.features-pagination .swiper-pagination-bullet-active {
+.features-nav-panel .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #3CC708 !important; /* Active bullet color */
     border: 1px solid #C9D8E3 !important; /* Active border */
 }

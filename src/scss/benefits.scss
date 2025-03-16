@@ -1,27 +1,23 @@
 
 .benefits-swiper {
-    width: 100%; /* Adjust width based on your layout */
+    width: 100%; 
     overflow: hidden;
     height: 400px;
     display: flex;
     justify-content: center;
     position: relative;
-
-     /* Center swiper in its container */
 }
 
-/* Wrapper for Swiper slides */
 .benefits-swiper .swiper-wrapper {
     display: flex;
     align-items: center;
 }
 
-/* Individual slide styles */
 .benefits-swiper .swiper-slide {
     width: 142px !important; /* Force fixed width */
     height: 255px !important; /* Fixed height */
     border: 2px solid #C5753D;
-background-color: #F0DDCB;
+    background-color: #F0DDCB;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -38,15 +34,11 @@ background-color: #F0DDCB;
     color: #383F4F
 }
 
-
-// 
-
-/* Ensure pagination is positioned below the Swiper */
 .benefits-nav-panel {
     display: flex;
-    justify-content: center; /* Center it horizontally */
+    justify-content: center; 
     align-items: center;
-    margin-top: 21px; /* Keep 21px gap from slides */
+    margin-top: 21px; 
 }
 
 /* Default pagination bullet styles */
