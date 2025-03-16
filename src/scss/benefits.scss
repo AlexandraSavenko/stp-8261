@@ -1,4 +1,28 @@
-
+.benefits-header-box{
+   background-image: url(../img/section-header-background.png);
+background-repeat: no-repeat; 
+min-width: 180px;
+width: fit-content;
+min-height: 35px;
+height: auto;
+margin: 0 auto;
+margin-bottom: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.benefits-header-box h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 900;
+  @include font(24, 24);
+  color: $_yellow_color;
+  -webkit-text-stroke: 1px $_braun_color;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+}
 .benefits-swiper {
     width: 100%; 
     overflow: hidden;
