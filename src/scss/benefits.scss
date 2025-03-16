@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center;
     position: relative;
+    display: block;
+    @include media (desktop){
+        display: none;
+    }
 }
 
 .benefits-swiper .swiper-wrapper {
@@ -59,3 +63,9 @@ padding: 12px 18px;
 }
 
 
+.benefits-d{
+    display: none;
+    @include media (desktop){
+        display: block;
+    }
+}
