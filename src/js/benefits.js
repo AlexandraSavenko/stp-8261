@@ -1,32 +1,47 @@
-// import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 
-// import styles bundle
 import 'swiper/css/bundle';
 
+let swiperInstance; 
+function handleSwiper() {
+  if (window.innerWidth <= 1200) { 
+    if (!swiperInstance) { // Initialize only if it doesn't exist
+      swiperInstance = new Swiper('.benefits-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+            console.dir(swiperInstance)
 
-// init Swiper:
-const swiper = new Swiper('.benefits-swiper', {
-    slidesPerView: 2,
-          spaceBetween: 24, 
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
+    }
+  } else { 
+    if (swiperInstance) { 
+      document.querySelector('.benefits-swiper').style.display = 'none';
+      // document.querySelectorAll('.swiper-container').forEach(swiper => {
+      //   if (swiper.swiper) {
+      //     swiper.swiper.destroy(true, true);
+      //   }
+      // });
       
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-      },
-  breakpoints: {
+      // console.log(`this is swiper instance ${swiperInstance.destroy}`)
+  //     swiperInstance.destroy(false, true);
+  //     document.querySelector('.benefits-swiper').style.display = 'none';
+  // setTimeout(() => {
+  //   document.querySelector('.benefits-swiper').style.display = 'block';
+  // }, 10);
+  // swiperInstance = null;
 
-        1200: {
-          slidesPerView: 3,
+    }
+  }
+}
 
-           navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-        },    
-      },
-  });
+handleSwiper();
+window.addEventListener('resize', handleSwiper);
+
