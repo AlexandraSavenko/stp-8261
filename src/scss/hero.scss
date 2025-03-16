@@ -37,6 +37,7 @@
   // ------------------------------------------------
   @include media(desktop) {
     @include font(74, 66);
+    -webkit-text-stroke: 2px $_braun_color;
     text-align: left;
   }
   // ----------------------------------------------
