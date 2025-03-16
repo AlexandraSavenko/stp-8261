@@ -1,67 +1,89 @@
-
-
-#reviews{
-    box-sizing: border-box;
-    padding: 0 54px;
-}
-/* Container styles */
 .reviews-swiper {
-    width: 100%; /* Adjust width based on your layout */
+    width: 100%; 
     overflow: hidden;
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     position: relative;
     display: flex;
-    justify-content: center; /* Center swiper in its container */
+    justify-content: center; 
     align-items: center;
+    @include media (desktop){
+        min-height: 390px;
+    }
 }
 
-/* Wrapper for Swiper slides */
 .reviews-swiper .swiper-wrapper {
-    display: flex;
-    align-items: center;
+    max-height: 100%;
+  height: 100%;
+  display: flex;
+    // height: auto;
+    // display: flex;
+    // align-items: center;
 }
 
-/* Individual slide styles */
 .reviews-swiper .swiper-slide {
-    width: 211px !important; /* Force fixed width */
-    height: 159px !important; /* Fixed height */
+    // min-width: 211px;
+    // width: 80%;
+    // min-height: 159px; 
+    // height: auto;
+    width: 100%;
+    flex-shrink: 0;
+    display: block;
+    height: 100%;
+    max-height: 100%;
     border: 2px solid #C5753D;
     border-radius: 8px;
     background-color: #F0DDCB;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden; /* Prevent content overflow */
+    text-align: left;
+    overflow: hidden; 
+    padding: 8px;
+    @include media (desktop){
+        width: auto;
+        padding: 18px;
+    }
 }
-.reviews-card p{
-    width: 195px;
-    height: 101px;
+
+.reviews-card {
     border: 1px solid #C5753D;
     border-radius: 8px;
     color: #383F4F;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px; /* Prevent text from touching the border */
-    box-sizing: border-box;
-    overflow: hidden; /* Prevent overflow */
-    word-wrap: break-word; /* Ensure text wraps properly */
+    overflow: hidden; 
+    word-wrap: break-word; 
     margin-bottom: 8px;
+    padding: 12px;
+    min-height: 101px;
+    height: auto;
+    @include media (desktop)
+    {
+    min-height: 158px;
+    height: auto;}
 }
-
+.reviews-card-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.reviews-card-author img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
 .reviews-card-author p {
+    flex-grow: 1;
     background-color: #FCEA5E;
     border: 1px solid #C5753D;
 border-radius: 8px;
 color: #383F4F;
-    width: 158px;
-    height: 34px;
+    min-height: 34px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
 }
 // -------------------------------------------------------------------------------------
 
-/* Ensure pagination is positioned below the Swiper */
 .reviews-nav-panel {
     display: flex;
     justify-content: center; /* Center it horizontally */
@@ -69,7 +91,6 @@ color: #383F4F;
     margin-top: 21px; /* Keep 21px gap from slides */
 }
 
-/* Default pagination bullet styles */
 .reviews-pagination .swiper-pagination-bullet {
     width: 10px; /* Default Swiper bullet size */
     height: 10px;
@@ -79,7 +100,6 @@ color: #383F4F;
     transition: background-color 0.3s, border 0.3s; /* Smooth transition */
 }
 
-/* Active bullet styles */
 .reviews-pagination .swiper-pagination-bullet-active {
     background-color: #3CC708 !important; /* Active bullet color */
     border: 1px solid #C9D8E3 !important; /* Active border */
