@@ -1,29 +1,32 @@
 
 .benefits-swiper {
-    width: 100%; /* Adjust width based on your layout */
+    width: 100%; 
     overflow: hidden;
-    height: 400px;
+    height: auto;
+    min-height: 160px;
     display: flex;
     justify-content: center;
     position: relative;
-
-     /* Center swiper in its container */
+    display: block;
+    @include media (desktop){
+        display: none;
+    }
 }
 
-/* Wrapper for Swiper slides */
 .benefits-swiper .swiper-wrapper {
     display: flex;
     align-items: center;
 }
 
-/* Individual slide styles */
 .benefits-swiper .swiper-slide {
-    width: 142px !important; /* Force fixed width */
-    height: 255px !important; /* Fixed height */
+width: 100%;
+height: auto;
+padding: 12px 18px;
     border: 2px solid #C5753D;
-background-color: #F0DDCB;
+    background-color: #F0DDCB;
     border-radius: 8px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -32,25 +35,19 @@ background-color: #F0DDCB;
 }
 
 .benefits-slide h3{
-    color: #2D75E2
+    color: #2D75E2;
+    background-color: #FCEA5E;
+    border: 3px solid #C5753D;
+    border-radius: 12px;
+    padding: 10px 36px;
 }
 .benefits-slide p{
     color: #383F4F
 }
 
 
-// 
-
-/* Ensure pagination is positioned below the Swiper */
-.benefits-nav-panel {
-    display: flex;
-    justify-content: center; /* Center it horizontally */
-    align-items: center;
-    margin-top: 21px; /* Keep 21px gap from slides */
-}
-
 /* Default pagination bullet styles */
-.benefits-nav-panel .swiper-pagination .swiper-pagination-bullet {
+.benefits-swiper .swiper-pagination .swiper-pagination-bullet {
     width: 10px; /* Default Swiper bullet size */
     height: 10px;
     background-color: #C9D8E3; /* Default inactive color */
@@ -60,15 +57,15 @@ background-color: #F0DDCB;
 }
 
 /* Active bullet styles */
-.benefits-nav-panel .swiper-pagination .swiper-pagination-bullet-active {
+.benefits-swiper .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #3CC708 !important; /* Active bullet color */
     border: 1px solid #C9D8E3 !important; /* Active border */
 }
 
-.benefits-nav-panel .swiper-button-prev, 
-.benefits-nav-panel .swiper-button-next{
+
+.benefits-d{
     display: none;
-    @include media(desktop) {
-   display: block;
-  }
+    @include media (desktop){
+        display: block;
+    }
 }
