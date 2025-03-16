@@ -1,116 +1,115 @@
 .reviews-swiper {
-    width: 100%; 
-    overflow: hidden;
-    min-height: 300px;
-    height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    @include media (desktop){
-        min-height: 390px;
-    }
+  width: 100%;
+  overflow: hidden;
+  min-height: 300px;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media(desktop) {
+    min-height: 390px;
+  }
 }
 
 .reviews-swiper .swiper-wrapper {
-    max-height: 100%;
+  max-height: 100%;
   height: 100%;
   display: flex;
-    // height: auto;
-    // display: flex;
-    // align-items: center;
+  // height: auto;
+  // display: flex;
+  // align-items: center;
 }
 
 .reviews-swiper .swiper-slide {
-    // min-width: 211px;
-    // width: 80%;
-    // min-height: 159px; 
-    // height: auto;
-    width: 100%;
-    flex-shrink: 0;
-    display: block;
-    height: 100%;
-    max-height: 100%;
-    border: 2px solid #C5753D;
-    border-radius: 8px;
-    background-color: #F0DDCB;
-    text-align: left;
-    overflow: hidden; 
-    padding: 8px;
-    @include media (desktop){
-        width: auto;
-        padding: 18px;
-    }
+  // min-width: 211px;
+  // width: 80%;
+  // min-height: 159px;
+  // height: auto;
+  width: 100%;
+  flex-shrink: 0;
+  display: block;
+  height: 100%;
+  max-height: 100%;
+  border: 2px solid #c5753d;
+  border-radius: 8px;
+  background-color: #f0ddcb;
+  text-align: left;
+  overflow: hidden;
+  padding: 8px;
+  @include media(desktop) {
+    width: auto;
+    padding: 18px;
+  }
 }
 
 .reviews-card {
-    border: 1px solid #C5753D;
-    border-radius: 8px;
-    color: #383F4F;
-    overflow: hidden; 
-    word-wrap: break-word; 
-    margin-bottom: 8px;
-    padding: 12px;
-    min-height: 101px;
-    height: auto;
-    @include media (desktop)
-    {
+  border: 1px solid #c5753d;
+  border-radius: 8px;
+  color: #383f4f;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin-bottom: 8px;
+  padding: 12px;
+  min-height: 101px;
+  height: auto;
+  @include media(desktop) {
     min-height: 158px;
-    height: auto;}
+    height: auto;
+  }
 }
 .reviews-card-author {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 .reviews-card-author img {
-    width: 33px;
-    height: 33px;
-    object-fit: cover;
-    border-radius: 50%;
-    flex-shrink: 0;
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 .reviews-card-author p {
-    flex-grow: 1;
-    background-color: #FCEA5E;
-    border: 1px solid #C5753D;
-border-radius: 8px;
-color: #383F4F;
-    min-height: 34px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 8px;
+  flex-grow: 1;
+  background-color: #fcea5e;
+  border: 1px solid #c5753d;
+  border-radius: 8px;
+  color: #383f4f;
+  min-height: 34px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px;
 }
 // -------------------------------------------------------------------------------------
 
 .reviews-nav-panel {
-    display: flex;
-    justify-content: center; /* Center it horizontally */
-    align-items: center;
-    margin-top: 21px; /* Keep 21px gap from slides */
+  display: flex;
+  justify-content: center; /* Center it horizontally */
+  align-items: center;
+  margin-top: 21px; /* Keep 21px gap from slides */
 }
 
 .reviews-pagination .swiper-pagination-bullet {
-    width: 10px; /* Default Swiper bullet size */
-    height: 10px;
-    background-color: #C9D8E3; /* Default inactive color */
-    border: 1px solid #3CC708; /* Inactive border */
-    opacity: 1; /* Ensure bullets are visible */
-    transition: background-color 0.3s, border 0.3s; /* Smooth transition */
+  width: 10px; /* Default Swiper bullet size */
+  height: 10px;
+  background-color: #c9d8e3; /* Default inactive color */
+  border: 1px solid #3cc708; /* Inactive border */
+  opacity: 1; /* Ensure bullets are visible */
+  transition: background-color 0.3s, border 0.3s; /* Smooth transition */
 }
 
 .reviews-pagination .swiper-pagination-bullet-active {
-    background-color: #3CC708 !important; /* Active bullet color */
-    border: 1px solid #C9D8E3 !important; /* Active border */
+  background-color: #3cc708 !important; /* Active bullet color */
+  border: 1px solid #c9d8e3 !important; /* Active border */
 }
 
 .reviews-nav-panel .reviews-button-prev,
-.reviews-nav-panel .reviews-button-next{
-    display: none;
-    @include media(desktop) {
-   display: block;
+.reviews-nav-panel .reviews-button-next {
+  display: none;
+  @include media(desktop) {
+    display: block;
   }
 }
 //--------------------------------------------------------------------------------------
-

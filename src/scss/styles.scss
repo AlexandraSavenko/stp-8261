@@ -65,13 +65,19 @@
   height: 36px;
   margin: 0 auto;
   text-transform: capitalize;
-  font-weight: 900;
-  @include font(24, 24);
-  color: $_yellow_color;
-  -webkit-text-stroke: 1px $_braun_color;
+  & h2 {
+    font-weight: 900;
+    @include font(20, 20);
+    color: $_yellow_color;
+    -webkit-text-stroke: 1px $_braun_color;
+  }
+
   @include media(desktop) {
     width: 410px;
     height: 82px;
-    @include font(48, 66);
+    & h2 {
+      font-weight: 900;
+      @include font(48, 66);
+    }
   }
 }
