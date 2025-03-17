@@ -45,58 +45,39 @@
   overflow: hidden;
 }
 .container {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 60px 16px;
 
   @include media(desktop) {
-    max-width: 1200px;
+    width: 1200px;
     padding: 60px 60px;
   }
 }
-// =================== Transform ==================
-// .box-plus:hover {
-//   animation: animatePlus 3000ms infinite 1000ms;
-// }
-// .box-minus:hover {
-//   animation: animateMinus 3000ms infinite 1000ms;
-// }
-// @keyframes animatePlus {
-//   0% {
-//     transform: skewX(0deg);
-//   }
-
-//   50% {
-//     transform: skewX(5deg);
-//   }
-
-//   100% {
-//     transform: skewX(0deg);
-//   }
-// }
-// @keyframes animateMinus {
-//   0% {
-//     transform: skewX(0deg);
-//   }
-
-//   50% {
-//     transform: skewX(-5deg);
-//   }
-
-//   100% {
-//     transform: skewX(0deg);
-//   }
-// }
-// =================== Transform ==================
-.hero-title {
-  font-weight: 900;
-  @include font(40, 32);
-  text-align: center;
-  color: #fcea5e;
-  -webkit-text-stroke: 1px #67280f;
+.title-header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/header-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 180px;
+  height: 36px;
+  margin: 0 auto;
   text-transform: capitalize;
+  & h2 {
+    font-weight: 900;
+    @include font(20, 20);
+    color: $_yellow_color;
+    -webkit-text-stroke: 1px $_braun_color;
+  }
+
   @include media(desktop) {
-    // font-size: 103px;
-    // letter-spacing: -1.545px;
+    width: 410px;
+    height: 82px;
+    & h2 {
+      font-weight: 900;
+      @include font(48, 66);
+    }
   }
 }

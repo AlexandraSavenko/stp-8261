@@ -1,3 +1,7 @@
+.blured {
+  backdrop-filter: blur(50px);
+}
+
 .header {
   height: 60px;
   position: fixed;
@@ -5,6 +9,10 @@
   top: 0;
   z-index: 100;
   background-color: $_light_blue;
+
+  @include media(desktop) {
+    background-color: $_main_color_black;
+  }
 }
 
 .header-container {
@@ -19,8 +27,10 @@
   transform: translateX(-50%);
 
   @include media(desktop) {
-    padding-left: 80px;
-    padding-right: 140px;
+    justify-content: center;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
 .header-burger {
@@ -48,35 +58,54 @@
 .nav-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   @include media(desktop) {
     flex-direction: row;
+    gap: 38px;
   }
 }
+
 .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 145px;
   height: 34px;
   border-radius: 12px;
-  border: 1px solid #f8e55c;
-  background-color: #1b9bfe;
+  border: 1px solid $_yellow_color;
+  background-color: $-modal_bg;
+}
+.nav-item-desk {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-item a {
-  color: #fcea5e;
+.nav-link {
+  display: block;
+  padding: 9px auto;
+  color: $_yellow_color;
+  font-weight: 500;
+  -webkit-text-stroke: 0.7px $_braun_color;
+  @include font(20, 16);
+
+  @include media(desktop) {
+    color: $_main_color_white;
+    font-weight: 400;
+    @include font(20, 20);
+  }
 }
 .header-dropdown {
   height: 100vh;
+  border: 1px solid #2d75e2;
   border-radius: 16px 0 0 16px;
   position: fixed;
   top: -100%;
   right: 0;
   transition: top 0.3s ease-in-out;
   z-index: 100;
-  padding: 8px 16px 32px 32px;
+  padding: 20px 14px;
   background-color: #383f4f;
-  min-width: 177px;
+  min-width: 172px;
   @include media(desktop) {
     display: none;
   }
@@ -97,15 +126,6 @@ body.no-scroll {
   @include media(desktop) {
     display: none;
   }
-}
-
-.nav-link {
-  display: block;
-  padding: 10px;
-  color: $_header_color;
-  font-weight: 500;
-  font-size: 21px;
-  letter-spacing: 0em;
 }
 
 .menu-close {

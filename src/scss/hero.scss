@@ -13,18 +13,16 @@
 
   @include media(desktop) {
     flex-direction: row;
-    // flex-wrap: wrap;
   }
 }
 
 .hero-wrapper {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   gap: 12px;
 
   @include media(desktop) {
-    width: calc((100% - 24px) / 2);
+    gap: 24px;
   }
 }
 .hero-title {
@@ -37,6 +35,7 @@
   // ------------------------------------------------
   @include media(desktop) {
     @include font(74, 66);
+    -webkit-text-stroke: 2px $_braun_color;
     text-align: left;
   }
   // ----------------------------------------------
@@ -49,6 +48,7 @@
   @include media(desktop) {
     @include font(40, 48);
     text-align: left;
+    margin-bottom: 48px;
   }
 }
 .hero-button {
@@ -72,7 +72,17 @@
     font-size: 24px;
   }
 }
-
+.hero-wrapper-btn {
+  @include media(desktop) {
+    display: none;
+  }
+}
+.hero-wrapper-btn-desk {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
 .hero-button:hover,
 .hero-button:focus {
   scale: 1.05;
