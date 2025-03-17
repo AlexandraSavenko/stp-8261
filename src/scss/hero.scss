@@ -51,53 +51,7 @@
     margin-bottom: 48px;
   }
 }
-.hero-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  width: 142px;
-  height: 40px;
-  border: 1px solid #168a42;
-  background-color: #3cc708;
-  border-radius: 8px;
 
-  @include media(desktop) {
-    width: 344px;
-    height: 60px;
-    border: 2px solid #168a42;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 24px;
-  }
-}
-.hero-wrapper-btn {
-  @include media(desktop) {
-    display: none;
-  }
-}
-.hero-wrapper-btn-desk {
-  display: none;
-  @include media(desktop) {
-    display: block;
-  }
-}
-.hero-button:hover,
-.hero-button:focus {
-  scale: 1.05;
-  box-shadow: 0 0 5px 5px rgba(252, 255, 255, 0.3);
-  -webkit-text-stroke: 0.3px #04ab52;
-}
-.hero-button-img {
-  width: 24px;
-  height: 24px;
-
-  @include media(desktop) {
-    width: 33px;
-    height: 33px;
-  }
-}
 .hero-video-block {
   position: relative;
 
