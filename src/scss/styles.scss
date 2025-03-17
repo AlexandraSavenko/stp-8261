@@ -1,14 +1,15 @@
 @import './header.scss';
 @import './hero.scss';
 @import './benefits.scss';
-// @import './game-description.scss';
-// @import './main-character.scss';
+@import './game-description.scss';
+@import './main-character.scss';
 @import './key-feature.scss';
 @import './gallery.scss';
 @import './reviews.scss';
 @import './footer.scss';
 @import './cookie-popup.scss';
 @import './pages.scss';
+@import './google-button.scss';
 
 :root {
   font-family: 'Passion One', sans-serif;
@@ -47,7 +48,7 @@
 .container {
   width: 320px;
   margin: 0 auto;
-  padding: 60px 16px;
+  padding: 60px 16px 0 16px;
 
   @include media(desktop) {
     width: 1200px;

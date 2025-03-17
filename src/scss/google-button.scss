@@ -1,0 +1,49 @@
+.google-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 142px;
+  height: 40px;
+  border: 1px solid $_btn_border_color;
+  background-color: $_btn_color;
+  border-radius: 8px;
+
+  @include media(desktop) {
+    width: 344px;
+    height: 60px;
+    border: 2px solid $_btn_border_color;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+.google-mobile {
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+.google-desk {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+.google-button:hover,
+.google-button:focus {
+  scale: 1.05;
+  box-shadow: 0 0 5px 5px rgba(252, 255, 255, 0.3);
+  -webkit-text-stroke: 0.3px #04ab52;
+}
+.google-button-img {
+  width: 24px;
+  height: 24px;
+
+  @include media(desktop) {
+    width: 33px;
+    height: 33px;
+  }
+}
