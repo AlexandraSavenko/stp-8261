@@ -11,13 +11,12 @@
 
 .benefits-swiper {
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; 
+   min-height: 160px;
   height: auto;
-  min-height: 160px;
   display: flex;
   justify-content: center;
   position: relative;
-  display: block;
   @include media(desktop) {
     display: none;
   }
@@ -55,20 +54,19 @@
   color: #383f4f;
 }
 
-/* Default pagination bullet styles */
+
 .benefits-swiper .swiper-pagination .swiper-pagination-bullet {
-  width: 10px; /* Default Swiper bullet size */
+  width: 10px; 
   height: 10px;
-  background-color: #c9d8e3; /* Default inactive color */
-  border: 1px solid #3cc708; /* Inactive border */
-  opacity: 1; /* Ensure bullets are visible */
-  transition: background-color 0.3s, border 0.3s; /* Smooth transition */
+  background-color: #c9d8e3; 
+  border: 1px solid #3cc708; 
+  opacity: 1; 
+  transition: background-color 0.3s, border 0.3s;
 }
 
-/* Active bullet styles */
 .benefits-swiper .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3cc708 !important; /* Active bullet color */
-  border: 1px solid #c9d8e3 !important; /* Active border */
+  background-color: #3cc708 !important; 
+  border: 1px solid #c9d8e3 !important; 
 }
 
 .benefits-d {
