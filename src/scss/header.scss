@@ -1,3 +1,7 @@
+.filter-blur {
+  filter: blur(2px);
+}
+
 .header {
   height: 60px;
   position: fixed;
@@ -47,9 +51,6 @@
   pointer-events: all;
   opacity: 1;
   right: 0;
-  .blured {
-    backdrop-filter: blur(50px);
-  }
 }
 .nav-list {
   display: flex;
