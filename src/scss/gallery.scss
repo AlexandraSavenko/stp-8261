@@ -52,6 +52,7 @@
     @include media(desktop) {
       display: flex;
       gap: 10px;
+      margin-top: 30px;
         // display: grid;
         // grid-template-columns: repeat(4, 1fr);
         // grid-template-rows: repeat(3, 1fr);
@@ -59,13 +60,54 @@
 width: 100%;
       }
 }
+.gallery-d-card{
+  border: 4px solid green;
+  border-radius: 18px;
+}
+.column-one{
+  margin-right: 30px;
+}
+.three-in-row{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.gallery-card-one{
+  background-image: url(../img/gallery/penguins.png);
+  background-size: cover;
+  min-width: 660px;
+  width: 100%;
+  height: 362px;
+}
+.gallery-card-two{
+  background-image: url(../img/gallery/img1.png);
+}
 
-.gallery-card1, .gallery-card2, .gallery-card3{
-  border: 1px solid green;
+.gallery-card-three{
+  background-image: url(../img/gallery/img2.png);
+}
+.gallery-card-four{
+  background-image: url(../img/gallery/img3.png);
+}
+.gallery-card-five{
+  background-image: url(../img/gallery/roomx1.png);
+  background-size: cover;
+  width: 333px;
+  height: 592px
+}
+.gallery-card-two, .gallery-card-three, .gallery-card-four {
+
   overflow: hidden;
   width: 230px;
   height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-size: 230px 200px;
+
 }
+// .gallery-image {
+//   object-fit: contain;
+// }
 // .gallery-d-wrap {
 //     display: grid;
 //     grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
