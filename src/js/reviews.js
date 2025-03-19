@@ -34,8 +34,8 @@ breakpoints: {
       slidesPerView: 3,
 
       navigation: {
-  nextEl: '.reviews-button-next',
-  prevEl: '.reviews-button-prev',
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
 },
     },
   },
