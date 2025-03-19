@@ -52,11 +52,20 @@
   max-width: 375px;
   margin: 0 auto;
 
-#pop-up-icon .icon-box{
-  border: 1px solid red;
+  .pop-up-icon{
+    border: 1px solid red;
+  }
+.icon-box{
   width: 140px;
   height: 140px;
   position: absolute;
+}
+
+.cookies-header{
+  font-weight: 900;
+    @include font(20, 20);
+    color: $_yellow_color;
+    -webkit-text-stroke: 1px $_braun_color;
 }
 
   @include media(desktop) {
