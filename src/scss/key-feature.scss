@@ -6,16 +6,23 @@
 .features-swiper {
     width: 100%; 
     overflow: hidden;
-    height: 600px; 
+    min-height: 300px;
+    height: auto;
+    // height: 600px; 
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 24px;
+    @include media (desktop){
+        margin-top: 30px;
+    }
 }
 
 .features-swiper .swiper-wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .features-swiper .swiper-slide {
@@ -27,6 +34,7 @@
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 24px;
     @include media(desktop) {
         flex-direction: column;
         align-items: flex-start;
@@ -103,18 +111,6 @@ padding: 16px;
         font-size: 20px;
     }
 }
-
-// .features-nav-panel {
-
-// border: 2px solid red;
-//     display: flex;
-//     justify-content: center; /* Center it horizontally */
-//     align-items: center;
-//     // margin-top: 21px; /* Keep 21px gap from slides */
-// }
-
-
-
 
 .features-swiper.swiper-pagination .swiper-pagination-bullet {
     width: 10px; 
