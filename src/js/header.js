@@ -1,6 +1,7 @@
 const openMenuBtn = document.querySelector('.header-burger');
 const mobMenuContainer = document.querySelector('.header-mob-menu');
 const menuWrapper = document.querySelector('.header-wrapper');
+const mainWrapper = document.querySelector('main');
 
 let menuOpen = false;
 
@@ -11,6 +12,8 @@ openMenuBtn.addEventListener('click', () => {
   } else {
     mobMenuContainer.classList.add('is-open');
     document.body.classList.add('scroll-lock');
+    mainWrapper.classList.toggle('filter-blur');
+
   }
   if (!menuOpen) {
     openMenuBtn.classList.add('open');
@@ -40,6 +43,7 @@ menuLinks.forEach(link => {
       behavior: 'smooth',
     });
     mobMenuContainer.classList.remove('is-open');
+    mainWrapper.classList.remove('filter-blur');
     document.body.classList.remove('scroll-lock');
     openMenuBtn.classList.toggle('open');
     menuOpen = false;
