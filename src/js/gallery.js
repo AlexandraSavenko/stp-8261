@@ -9,6 +9,7 @@ function handleSwiper() {
       swiperInstance = new Swiper('.gallery-swiper', {
         slidesPerView: 1,
         spaceBetween: 24,
+        loop: true,
         keyboard: {
           enabled: true,
           onlyInViewport: true,
