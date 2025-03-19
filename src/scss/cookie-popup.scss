@@ -19,18 +19,17 @@
   display: none;
   position: fixed;
   bottom: 30%;
-  // left: 50%;
   width: 100%;
-  // transform: translateX(-50%);
   background-color: #3A475A;
   z-index: 999;
-  padding-top: 32px;
-  padding-bottom: 22px;
-  padding-left: 16px;
-  padding-right: 16px;
+  // padding-top: 32px;
+  // padding-bottom: 22px;
+  // padding-left: 16px;
+  // padding-right: 16px; 
+  padding: 30px 152px;
+   border-radius: 18px;
   border: 4px solid;
   border-image: linear-gradient(90deg,  #199CFE, #C9D8E3) 1;
-  border-radius: 18px;
 
   @include media(desktop) {
     padding-top: 49px;
@@ -65,9 +64,23 @@
 .cookies-content .cookies-header{
   font-weight: 900;
   font-size: 48px;
-    @include font(20, 20);
-    color: $_yellow_color;
+  line-height: 66px;
+  color: $_yellow_color;
     -webkit-text-stroke: 1px $_braun_color;
+    text-align: center;
+    margin-bottom: 12px;
+    
+}
+.cookies-p{
+  font-size: 24px;
+  color: $_main_color_white;
+  text-align: center;
+}
+.cookie-link{
+  color: $_blue_color;
+}
+.cookie-link:hover{
+  text-decoration: underline;
 }
 .popup-buttons{
 display: flex;
@@ -82,6 +95,8 @@ margin-top: 30px;
   color: $_main_color_white;
   padding: 14px 32px;
   background-color: transparent;
+  font-size: 24px;
+  font-weight: 700px;
 }
 .decline-btn:hover,
 .accept-btn:hover{
