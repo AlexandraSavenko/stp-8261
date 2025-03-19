@@ -47,90 +47,44 @@
 .show-popup {
   display: block;
 }
-
-.cookie-content {
-  max-width: 375px;
-  margin: 0 auto;
-
-  .pop-up-icon{
-    border: 1px solid red;
-  }
 .icon-box{
   width: 140px;
   height: 140px;
   position: absolute;
+  top: 0;
+  right: 60px;
+  transform: translateY(-40%);
 }
-
-.cookies-header{
-  font-weight: 900;
-    @include font(20, 20);
-    color: $_yellow_color;
-    -webkit-text-stroke: 1px $_braun_color;
-}
-
+.cookie-content {
+  max-width: 375px;
+  margin: 0 auto;
   @include media(desktop) {
     max-width: 1200px;
   }
 }
-
-// .cookie-text {
-//   font-family: 'Alegreya Sans SC', sans-serif;
-//   font-size: 17px;
-//   letter-spacing: 0em;
-//   margin-bottom: 16px;
-
-//   @include media(desktop) {
-//     font-weight: 500;
-//     font-size: 21px;
-//   }
-// }
-
-// .cookie-text {
-//   &.cookie-text-about {
-//     font-weight: 500;
-//     font-size: 15px;
-//     margin-bottom: 24px;
-
-//     @include media(desktop) {
-//       font-weight: 400;
-//       font-size: 17px;
-//       margin-bottom: 20px;
-//     }
-//   }
-// }
-
-// .cookie-btn-wrap {
-//   display: flex;
-//   align-items: center;
-//   gap: 40px;
-//   justify-content: center;
-//   margin: 0 auto;
-//   max-width: 1034px;
-
-//   @include media(desktop) {
-//     gap: 20px;
-//     justify-content: end;
-//   }
-// }
-
-// .cookie-btn {
-//   font-family: 'Prompt', sans-serif;
-//   border: 1px solid #1d0000;
-//   border-radius: 12px;
-//   font-weight: 500;
-//   font-size: 16px;
-//   letter-spacing: 0.01em;
-//   color: inherit;
-//   background-color: $_main_color;
-//   width: 106px;
-//   height: 44px;
-//   transition: all 250ms linear;
-// }
-
-// .cookie-btn:hover,
-// .cookie-btn:focus {
-//   background-color: #6c331e;
-//   color: $_main_color;
-//   border: none;
-//   outline: none;
-// }
+.cookies-content .cookies-header{
+  font-weight: 900;
+  font-size: 48px;
+    @include font(20, 20);
+    color: $_yellow_color;
+    -webkit-text-stroke: 1px $_braun_color;
+}
+.popup-buttons{
+display: flex;
+justify-content: center;
+gap: 30px;
+margin-top: 30px;
+}
+.decline-btn,
+.accept-btn{
+  border: 2px solid $_btn_color;
+  border-radius: 18px;
+  color: $_main_color_white;
+  padding: 14px 32px;
+  background-color: transparent;
+}
+.decline-btn:hover,
+.accept-btn:hover{
+  background-color: $_btn_color;
+  border-color: $_main_color_white;
+}
