@@ -13,7 +13,6 @@ openMenuBtn.addEventListener('click', () => {
     mobMenuContainer.classList.add('is-open');
     document.body.classList.add('scroll-lock');
     mainWrapper.classList.toggle('filter-blur');
-
   }
   if (!menuOpen) {
     openMenuBtn.classList.add('open');

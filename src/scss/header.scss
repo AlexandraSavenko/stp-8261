@@ -1,8 +1,9 @@
-
 .filter-blur {
   filter: blur(2px);
 }
-
+.scroll-lock {
+  overflow: hidden;
+}
 
 .header {
   height: 60px;
@@ -111,11 +112,6 @@
   }
 }
 
-body.no-scroll {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-}
 // ====================  Progress bar ====================
 
 .progress-bar {
