@@ -1,11 +1,10 @@
 .gallery-swiper {
-    width: 100%;
+    width: fit-content !important;
     overflow: hidden;
     min-height: 350px;
     height: auto;
-    // display: flex;
-    // justify-content: center;
     position: relative;
+    margin: 0 auto;
     margin-top: 30px;
     @include media(desktop) {
       display: none;
@@ -13,25 +12,24 @@
   }
 
   .gallery-swiper .swiper-wrapper {    
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 150px;
     height: 300px;
   }
   #gallery .gallery-swiper .swiper-slide {
+    box-sizing: border-box;
     border: 2px solid green; 
     border-radius: 8px;
-    width: 150px !important;
-    min-height: 300px;
-    height: auto;
+    width: 100% !important;
+    // min-height: 290px;
+    // height: auto;
     overflow: hidden; /* Prevent content overflow */
   }
 
   #gallery .gallery-swiper .swiper-slide .gallery-image{
     width: 100%;
     height: auto;
+    object-fit: contain;
+    
   }
   .gallery-swiper .swiper-pagination .swiper-pagination-bullet {
     width: 10px; 
@@ -53,10 +51,6 @@
       display: flex;
       gap: 10px;
       margin-top: 30px;
-        // display: grid;
-        // grid-template-columns: repeat(4, 1fr);
-        // grid-template-rows: repeat(3, 1fr);
-        // gap: 10px;
 width: 100%;
       }
 }
@@ -105,50 +99,3 @@ width: 100%;
   background-size: 230px 200px;
 
 }
-// .gallery-image {
-//   object-fit: contain;
-// }
-// .gallery-d-wrap {
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-//     grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
-//     gap: 10px; /* Adjust the gap as needed */
-//     width: 100%; /* Ensure it spans the full width */
-//   }
-  
-//   .gallery-box1 {
-//     background-color: #ddd; /* Example background */
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     text-align: center;
-//   }
-  
-//   /* First element: Takes up 3 columns in the first row */
-//   .gallery-box1:nth-child(1) {
-//     grid-column: span 3;
-//     grid-row: span 1;
-//   }
-  
-//   /* Second element: Takes up 1 column and spans 2 rows */
-//   .gallery-box1:nth-child(2) {
-//     grid-column: span 1;
-//     grid-row: span 2;
-//   }
-  
-//   /* The next three elements should be square and placed in the second row */
-//   .gallery-box1:nth-child(3),
-//   .gallery-box1:nth-child(4),
-//   .gallery-box1:nth-child(5) {
-//     aspect-ratio: 1 / 1; /* Makes them square */
-//   }
-
-// // #gallery-card1{
-// //     grid-column-start: 1;
-// //     grid-column-end: 3;
-// // }
-
-// // #gallery-card2{
-// //     grid-row-start: 1;
-// //     grid-row-end: 3;
-// // }

@@ -6,19 +6,27 @@
 .features-swiper {
     width: 100%; 
     overflow: hidden;
-    height: 600px; 
+    min-height: 300px;
+    height: auto;
+    // height: 600px; 
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 24px;
+    @include media (desktop){
+        margin-top: 30px;
+    }
 }
 
 .features-swiper .swiper-wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .features-swiper .swiper-slide {
+    box-sizing: border-box;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -26,6 +34,7 @@
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 24px;
     @include media(desktop) {
         flex-direction: column;
         align-items: flex-start;
@@ -38,18 +47,19 @@
     width: fit-content;
     min-height: 255px;
     height: auto;
-    padding: 16px;
     border: 2px solid #FCEA5E;
 background-color: #2D75E2;
-    border-radius: 8px;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 4px;
     @include media(desktop) {
-flex-direction: row;    
+flex-direction: row;  
+gap: 18px;  
 width: fit-content;  
+padding: 16px;
     max-width: 643px;  
     min-width: 320px;  
     height: auto;  
@@ -87,25 +97,20 @@ width: fit-content;
 }
 .features-text-wrap h3{
     color: #FCEA5E;
-    margin-bottom: 18px;
-    font-size: 24px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    @include media (desktop){
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
 }
 .features-text-wrap p{
     color: #C9D8E3;
-    font-size: 18px;
+    font-size: 14px;
+    @include media (desktop){
+        font-size: 20px;
+    }
 }
-
-// .features-nav-panel {
-
-// border: 2px solid red;
-//     display: flex;
-//     justify-content: center; /* Center it horizontally */
-//     align-items: center;
-//     // margin-top: 21px; /* Keep 21px gap from slides */
-// }
-
-
-
 
 .features-swiper.swiper-pagination .swiper-pagination-bullet {
     width: 10px; 
@@ -117,8 +122,8 @@ width: fit-content;
 }
 
 .features-swiper .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #3CC708 !important; /* Active bullet color */
-    border: 1px solid #C9D8E3 !important; /* Active border */
+    background-color: #3CC708 !important;
+    border: 1px solid #C9D8E3 !important;
 }
 
 .swiper-button-next::after,

@@ -16,6 +16,8 @@ import 'swiper/css/parallax';
 const swiper = new Swiper('.reviews-swiper', {
  slidesPerView: 1,
       spaceBetween: 24,
+      loop: true,
+
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
