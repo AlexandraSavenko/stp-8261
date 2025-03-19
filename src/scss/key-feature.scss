@@ -135,28 +135,24 @@ width: fit-content;
     height: 24px;
     background-size: contain;
     background-repeat: no-repeat;
-  }
+top: 100%;
+}
 }
 .features-swiper .swiper-button-prev {
     background-image: url("../img/key-features/whiteLeft.png");
-    background-repeat: no-repeat; 
-    background-size: contain; 
+left: 42%;
 }
 
 .features-swiper .swiper-button-prev.active { 
     background-image: url("../img/key-features/greenLeft.png");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .features-swiper .swiper-button-next {
     background-image: url("../img/key-features/whiteRight.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+
+    right: 42%;
 }
 
 .features-swiper .swiper-button-next.active {
     background-image: url("../img/key-features/greenRight.png");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
