@@ -1,5 +1,5 @@
 .hero {
-  background-color: rgb(25, 156, 254);
+  background-color: $_light_blue;
   padding-top: 30px;
 }
 
@@ -9,7 +9,6 @@
   align-items: center;
   gap: 32px;
   position: relative;
-  // margin-bottom: 20px;!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   @include media(desktop) {
     flex-direction: row;

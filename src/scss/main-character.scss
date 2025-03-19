@@ -13,24 +13,30 @@
 .characters-list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
+  position: relative;
 
   @include media(desktop) {
     align-items: center;
     gap: 30px;
   }
 }
+
 .characters-item {
-  display: flex;
+  display: block;
   flex-direction: column;
   gap: 16px;
   border: 1px solid $_light_blue;
-  // border-radius: 12px;
-  // border-image: linear-gradient(0deg, #199cfe 0%, rgba(201, 216, 227, 0) 100%);
-  // border-image-slice: 1;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-radius: 12px;
+  border-image: linear-gradient(
+    0deg,
+    $_light_blue 30%,
+    rgba(201, 216, 227, 0) 100%
+  );
+  border-image-slice: 1;
+  // border-bottom-right-radius: 12px;
+  // border-bottom-left-radius: 12px;
 
   // border-image: linear-gradient(
   //   0deg,
@@ -54,13 +60,66 @@
     height: 158px;
   }
 }
-
+@include media(to-desktop) {
+  .characters-item:nth-child(odd) {
+    margin-right: auto;
+  }
+  .characters-item:nth-child(even) {
+    margin-left: auto;
+  }
+}
+@include media(desktop) {
+  .characters-item:nth-child(2) {
+    position: relative;
+    left: 354px;
+    border-image: linear-gradient(
+      260deg,
+      $_light_blue 30%,
+      rgba(201, 216, 227, 0) 100%
+    );
+    border-image-slice: 1;
+  }
+  .characters-item:nth-child(3) {
+    position: relative;
+    top: 0px;
+    left: 240px;
+    border-image: linear-gradient(
+      270deg,
+      $_light_blue 30%,
+      rgba(201, 216, 227, 0) 100%
+    );
+    border-image-slice: 1;
+  }
+  .characters-item:nth-child(4) {
+    position: absolute;
+    bottom: 187px;
+    left: 10px;
+    border-image: linear-gradient(
+      100deg,
+      $_light_blue 30%,
+      rgba(201, 216, 227, 0) 100%
+    );
+    border-image-slice: 1;
+  }
+  .characters-item:nth-child(5) {
+    position: absolute;
+    bottom: 0px;
+    left: 90px;
+    border-image: linear-gradient(
+      95deg,
+      $_light_blue 30%,
+      rgba(201, 216, 227, 0) 100%
+    );
+    border-image-slice: 1;
+  }
+}
 .characters-item:last-child {
   width: 100%;
   @include media(desktop) {
     width: 470px;
   }
 }
+
 .characters-item-title {
   text-wrap: 900px;
   color: $_characters_title_color;
