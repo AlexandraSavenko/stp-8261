@@ -45,11 +45,13 @@
   height: 40px;
   position: absolute;
   top: 0;
-  right: 60px;
+  right: 0;
   transform: translateY(-40%);
   @include media(desktop){
     width: 140px;
     height: 140px; 
+    right: 10%;
+
   }
 }
 .cookie-content {
