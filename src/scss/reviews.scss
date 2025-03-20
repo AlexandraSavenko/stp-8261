@@ -79,7 +79,7 @@
 // -------------------------------------------------------------------------------------
 
 .reviews-swiper .swiper-pagination{
-  bottom: 0 !important;
+  bottom: 2% !important;
 }
 
 .reviews-pagination .swiper-pagination-bullet {
@@ -110,24 +110,32 @@
     height: 24px;
     background-size: contain;
     background-repeat: no-repeat;
-top: 100%;
+top: 98%;
 }
 }
 .reviews-swiper .swiper-button-prev {
     background-image: url("../img/reviews/whiteLeft.png");
 left: 42%;
+border: 2px solid #D9D9D9;
+border-radius: 50%;
 }
 
 .reviews-swiper .swiper-button-prev.active { 
     background-image: url("../img/reviews/greenLeft.png");
+    border: 2px solid #3CC708;
+    border-radius: 50%;
   }
 
 .reviews-swiper .swiper-button-next {
     background-image: url("../img/reviews/whiteRight.png");
     right: 42%;
+    border: 2px solid #D9D9D9;
+border-radius: 50%;
 }
 
 .reviews-swiper .swiper-button-next.active {
     background-image: url("../img/reviews/greenRight.png");
+    border: 2px solid #3CC708;
+    border-radius: 50%;
 }
 //--------------------------------------------------------------------------------------
