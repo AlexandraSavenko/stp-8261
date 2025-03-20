@@ -110,7 +110,7 @@ padding: 16px;
 }
 
 .features-swiper .swiper-pagination{
-    bottom: 0 !important;
+    bottom: 2% !important;
 }
 .features-swiper .swiper-pagination-bullet {
     width: 10px; 
@@ -136,28 +136,38 @@ padding: 16px;
     display: none;
     @include media(desktop) {
    display: inline-block;
-   width: 24px; 
-    height: 24px;
+   width: 26px; 
+    height: 26px;
     background-size: contain;
     background-repeat: no-repeat;
-top: 100%;
+top: 98%;
 }
 }
+
+
+
 .features-swiper .swiper-button-prev {
     background-image: url("../img/key-features/whiteLeft.png");
 left: 42%;
+border: 2px solid #D9D9D9;
+border-radius: 50%;
 }
 
 .features-swiper .swiper-button-prev.active { 
     background-image: url("../img/key-features/greenLeft.png");
+    border: 2px solid #3CC708;
+border-radius: 50%;
 }
 
 .features-swiper .swiper-button-next {
     background-image: url("../img/key-features/whiteRight.png");
-
     right: 42%;
+    border: 2px solid #D9D9D9;
+border-radius: 50%;
 }
 
 .features-swiper .swiper-button-next.active {
     background-image: url("../img/key-features/greenRight.png");
+    border: 2px solid #3CC708;
+border-radius: 50%;
 }
