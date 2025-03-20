@@ -18,17 +18,19 @@
   color: #1d0000;
   display: none;
   position: fixed;
-  bottom: 30%;
+  bottom: 50%;
+  transform: translateY(50%);
   width: 100%;
   background-color: #3A475A;
   z-index: 999;
-  padding: 30px 152px;
+  padding: 16px;
    border-radius: 18px;
    border: 4px solid transparent; 
   border-image-source: linear-gradient(90deg, #199CFE, #C9D8E3);
   border-image-slice: 1;
-  // border: 4px solid;
-  // border-image: linear-gradient(90deg,  #199CFE, #C9D8E3) 1;
+  @include media(desktop){
+      padding: 30px 152px;
+  }
 }
 
 .cookies-popup{
@@ -39,12 +41,18 @@
   display: block;
 }
 .icon-box{
-  width: 140px;
-  height: 140px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 0;
-  right: 60px;
+  right: 0;
   transform: translateY(-40%);
+  @include media(desktop){
+    width: 140px;
+    height: 140px; 
+    right: 10%;
+
+  }
 }
 .cookie-content {
   max-width: 375px;
@@ -54,19 +62,26 @@
   }
 }
 .cookies-content .cookies-header{
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 66px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
   color: $_yellow_color;
     -webkit-text-stroke: 1px $_braun_color;
     text-align: center;
     margin-bottom: 12px;
-    
+    @include media(desktop){
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 66px;
+    }
 }
 .cookies-p{
-  font-size: 24px;
+  font-size: 14px;
   color: $_main_color_white;
   text-align: center;
+  @include media (desktop){
+    font-size: 24px;
+  }
 }
 .cookie-link{
   color: $_blue_color;
@@ -77,21 +92,34 @@
 .popup-buttons{
 display: flex;
 justify-content: center;
-gap: 30px;
-margin-top: 30px;
+gap: 16px;
+margin-top: 8px;
+@include media (desktop){
+  gap: 30px;
+  margin-top: 30px;
+
+}
 }
 .decline-btn,
 .accept-btn{
   border: 2px solid $_btn_color;
   border-radius: 18px;
   color: $_main_color_white;
-  padding: 14px 32px;
+  padding: 8px 12px;
   background-color: transparent;
-  font-size: 24px;
-  font-weight: 700px;
+  font-weight: 700px; 
+font-size: 12px;
+  @include media (desktop){
+     font-size: 24px;
+     padding: 14px 32px;
+
+  }
+}
+.accept-btn{
+  background-color: $_btn_color;
 }
 .decline-btn:hover,
 .accept-btn:hover{
-  background-color: $_btn_color;
+  background-color: $_btn_border_color;
   border-color: $_main_color_white;
 }

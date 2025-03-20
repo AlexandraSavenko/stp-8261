@@ -1,14 +1,11 @@
 .features{
     box-sizing: border-box;
-    padding: 16px;
-
 }
 .features-swiper {
     width: 100%; 
     overflow: hidden;
     min-height: 300px;
     height: auto;
-    // height: 600px; 
     position: relative;
     display: flex;
     justify-content: center;
@@ -112,7 +109,10 @@ padding: 16px;
     }
 }
 
-.features-swiper .swiper-pagination .swiper-pagination-bullet {
+.features-swiper .swiper-pagination{
+    bottom: 0 !important;
+}
+.features-swiper .swiper-pagination-bullet {
     width: 10px; 
     height: 10px;
     background-color: #C9D8E3; 
