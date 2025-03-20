@@ -7,21 +7,15 @@ const swiper = new Swiper('.reviews-swiper', {
  slidesPerView: 1,
       spaceBetween: 24,
       loop: true,
-
   pagination: {
     el: ".swiper-pagination",
-    dynamicBullets: true,
-    
+    clickable: true,
   },
-  
-   // Navigation arrows
-
 keyboard: {
   enabled: true,
   onlyInViewport: true,
 },
 breakpoints: {
-
     1200: {
       slidesPerView: 3,
 

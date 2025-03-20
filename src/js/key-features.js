@@ -8,8 +8,8 @@ const swiper = new Swiper('.features-swiper', {
 
     pagination: {
       el: ".swiper-pagination",
-      dynamicBullets: true,
-      
+    clickable: true,
+
     },
     keyboard: {
         enabled: true,
