@@ -3,4 +3,4 @@ function Ke(s){return s!==null&&typeof s=="object"&&"constructor"in s&&s.constru
         rotateZ(${u.rotate?l?-A:A:0}deg)
         scale(${z})
       `;if(u.slideShadows){let M=o.querySelector(".swiper-slide-shadow");M||(M=me("cards",o)),M&&(M.style.opacity=Math.min(Math.max((Math.abs(v)-.5)/.5,0),1))}o.style.zIndex=-Math.abs(Math.round(n))+c.length;const S=xe(u,o);S.style.transform=L}},setTransition:c=>{const d=e.slides.map(l=>ce(l));d.forEach(l=>{l.style.transitionDuration=`${c}ms`,l.querySelectorAll(".swiper-slide-shadow").forEach(u=>{u.style.transitionDuration=`${c}ms`})}),Ae({swiper:e,duration:c,transformElements:d})},perspective:()=>!0,overwriteParams:()=>({_loopSwapReset:!1,watchSlidesProgress:!0,loopAdditionalSlides:3,centeredSlides:!0,virtualTranslate:!e.params.cssMode})})}const ei=[Cs,Ps,Ls,Is,zs,As,$s,Os,Ds,ks,Hs,Gs,Bs,Xs,Ys,Rs,qs,js,Us,Ks,Zs,Qs,Js];Z.use(ei);export{Z as S};
-//# sourceMappingURL=vendor-34a460a6.js.map
+//# sourceMappingURL=vendor-70db0e54.js.map
